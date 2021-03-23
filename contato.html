@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contato.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1>
+                <a href="index.html"><img src="img-produtos/logo.png" alt="Logo banner"></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>   
+    </header>
+
+    <main>
+        <form action="">
+            <label for="nome-completo">Nome completo</label>
+            <input type="text" id="nome-completo" class="input-padrao" required>
+            <label for="email">Email</label value="">
+            <input type="email" id="email" class="input-padrao" required placeholder="seunome@dominio.com">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xx xxx xxxx">
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem" class="input-textArea" required></textarea>
+
+            
+            
+            <fieldset>
+                <legend>Como gostaria de entrar em contato?</legend>
+                <label for="radio-email"><input type="radio" id="radio-email" name="contato">Email</label>
+                <label for="radio-telefone"><input type="radio" id="radio-telefone" name="contato">Telefone</label>
+                <label for="radio-whatsapp"><input type="radio" id="radio-whatsapp" name="contato" checked>WhatsApp</label>
+                <fieldset>
+                    <p>Qual horário prefere ser atendido?</p>
+                    <select name="" id="">
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </fieldset>
+                <label for="checkbox" class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="enviar">
+        </form>
+        <table>
+            <thead>
+                <th>Dia</th>
+                <th>Horário</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td class="time-table">8 - 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td class="time-table">8 - 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td class="time-table">8 - 20h</td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+    </main>
+    <footer>
+        <img src="img-produtos/logo-branco.png" alt="Logo banner rodapé">
+            <legend class="copyright">&copy; Copyright development by Jakson Cunha de Souza - 2019-2021</legend>
+        </img>
+    </footer>
+</body>
+</html>
